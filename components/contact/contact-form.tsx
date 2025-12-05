@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 
 export function ContactForm() {

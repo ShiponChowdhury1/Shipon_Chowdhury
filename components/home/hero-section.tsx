@@ -38,9 +38,9 @@ export function HeroSection() {
                 <Typewriter
                   options={{
                     strings: [
-                      'Building modern web applications with React, Node.js, and MongoDB',
-                      'Creating responsive and dynamic user interfaces',
-                      'Developing full-stack solutions with Next.js and Express',
+                     ' Modern full-stack apps with React, Node.js & MongoDB',
+                     ' Responsive, dynamic, user-focused interfaces',
+                    ' Scalable solutions using Next.js, TypeScript & Express'
                     ],
                     autoStart: true,
                     loop: true,

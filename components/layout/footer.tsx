@@ -54,34 +54,34 @@ export function Footer() {
             <h4 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">Connect</h4>
             <div className="flex gap-3 sm:gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/shiponchowdhury"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[#AD86FF] to-[#789AFF] hover:from-[#9B6FFF] hover:to-[#6788FF] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <Github size={20} />
+                <Github size={20} className="text-white" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/shiponchowdhury"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[#AD86FF] to-[#789AFF] hover:from-[#9B6FFF] hover:to-[#6788FF] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <Linkedin size={20} />
+                <Linkedin size={20} className="text-white" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/shiponchowdhury"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[#AD86FF] to-[#789AFF] hover:from-[#9B6FFF] hover:to-[#6788FF] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <Twitter size={20} />
+                <Twitter size={20} className="text-white" />
               </a>
               <a
-                href="mailto:hello@example.com"
-                className="p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors"
+                href="mailto:nxshipon@gmail.com"
+                className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[#AD86FF] to-[#789AFF] hover:from-[#9B6FFF] hover:to-[#6788FF] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <Mail size={20} />
+                <Mail size={20} className="text-white" />
               </a>
             </div>
           </div>

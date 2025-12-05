@@ -1,9 +1,9 @@
 import { SlideIn } from '@/components/ui/animations';
 
 const stats = [
-  { label: 'Projects Completed', value: '50+' },
-  { label: 'Happy Clients', value: '30+' },
-  { label: 'Years Experience', value: '5+' },
+  { label: 'Projects Completed', value: '10+' },
+  { label: 'Happy Clients', value: '3+' },
+  { label: 'Years Experience', value: '2+' },
 ];
 
 export function Stats() {

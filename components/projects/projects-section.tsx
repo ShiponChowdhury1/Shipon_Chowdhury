@@ -6,8 +6,18 @@ import { ProjectCard } from './project-card';
 import { AnimatedCard } from '@/components/ui/animations';
 import { Code } from 'lucide-react';
 
+interface Project {
+  _id: string;
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+  coverImage?: string;
+  tags: string[];
+}
+
 interface ProjectsSectionProps {
-  projects: any[];
+  projects: Project[];
 }
 
 const categories = ['All', 'Dashboard', 'Web App', 'Landing Page', 'E-commerce', 'Full Stack', 'API'];
@@ -17,7 +27,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
 
   const filteredProjects = activeCategory === 'All' 
     ? projects 
-    : projects.filter((project: any) => project.category === activeCategory);
+    : projects.filter((project) => project.category === activeCategory);
 
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
@@ -54,7 +64,7 @@ export function ProjectsSection({ projects }: ProjectsSectionProps) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project: any, index: number) => (
+            {filteredProjects.map((project, index: number) => (
               <AnimatedCard key={project._id} delay={index * 0.1}>
                 <ProjectCard project={project} />
               </AnimatedCard>
