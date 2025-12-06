@@ -17,8 +17,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shipon Chowdhury - Portfolio",
+  title: {
+    default: "Shipon Chowdhury - Portfolio",
+    template: "%s | Shipon Chowdhury"
+  },
   description: "Junior Full-Stack JavaScript Developer portfolio showcasing web development projects built with React, Node.js, Express, and MongoDB.",
+  keywords: ["Full-Stack Developer", "JavaScript", "React", "Next.js", "Node.js", "MongoDB", "Web Development", "Portfolio"],
+  authors: [{ name: "Shipon Chowdhury" }],
+  creator: "Shipon Chowdhury",
+  metadataBase: new URL('https://shiponchowdhury.vercel.app'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://shiponchowdhury.vercel.app',
+    title: 'Shipon Chowdhury - Portfolio',
+    description: 'Junior Full-Stack JavaScript Developer portfolio showcasing web development projects',
+    siteName: 'Shipon Chowdhury Portfolio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Shipon Chowdhury - Portfolio',
+    description: 'Junior Full-Stack JavaScript Developer portfolio',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

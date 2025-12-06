@@ -6,6 +6,14 @@ import { ServicesSection } from '@/components/home/services-section';
 import { ProjectsSection } from '@/components/projects/projects-section';
 import { AboutSection } from '@/components/about/about-section';
 import { ContactSection } from '@/components/contact/contact-section';
+import type { Metadata } from 'next';
+
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Welcome to Shipon Chowdhury\'s portfolio - Junior Full-Stack JavaScript Developer specializing in modern web technologies',
+};
 
 export default async function Home() {
   const result = await getProjects({ status: 'published' });

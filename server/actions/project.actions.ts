@@ -21,8 +21,10 @@ export async function getProjects(filters?: {
     if (filters?.category) query.category = filters.category;
 
     const projects = await Project.find(query)
+      .select('-__v') // Exclude version key
       .sort({ createdAt: -1 })
-      .lean();
+      .lean()
+      .exec();
 
     return {
       success: true,
@@ -41,7 +43,10 @@ export async function getProjectBySlug(slug: string) {
   try {
     await connectDB();
 
-    const project = await Project.findOne({ slug }).lean();
+    const project = await Project.findOne({ slug })
+      .select('-__v')
+      .lean()
+      .exec();
 
     if (!project) {
       return {
@@ -50,8 +55,8 @@ export async function getProjectBySlug(slug: string) {
       };
     }
 
-    // Increment views
-    await Project.findByIdAndUpdate(project._id, { $inc: { views: 1 } });
+    // Increment views asynchronously without waiting
+    Project.findByIdAndUpdate(project._id, { $inc: { views: 1 } }).exec();
 
     return {
       success: true,

@@ -175,6 +175,35 @@ Built with Next.js 14 and TypeScript for modern web development.`,
     githubUrl: "https://github.com/yourusername/portfolio",
     featured: false,
     status: "published"
+  },
+  {
+    title: "Portfolio Dashboard",
+    description: "Personal portfolio website with admin dashboard, blog, and project showcase.",
+    longDescription: `Full-stack portfolio with CMS:
+
+- Project showcase with filtering
+- Integrated blog system
+- Admin dashboard for content management
+- Contact form with email integration
+- Analytics and visitor tracking
+- SEO optimization
+- Dark mode support
+- Responsive design
+- API for dynamic content
+- MongoDB database
+
+Built with Next.js 14 and TypeScript for modern web development.`,
+    category: "Full Stack",
+    tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS", "API Routes", "React"],
+    coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop",
+    screenshots: [
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=800&fit=crop"
+    ],
+    liveUrl: "https://your-portfolio.vercel.app",
+    githubUrl: "https://github.com/yourusername/portfolio",
+    featured: false,
+    status: "published"
   }
 ];
 

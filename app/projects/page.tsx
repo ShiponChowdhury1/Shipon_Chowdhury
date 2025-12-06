@@ -3,6 +3,14 @@ import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { FadeIn } from '@/components/ui/animations';
 import { ProjectsClient } from '@/components/projects/projects-client';
+import type { Metadata } from 'next';
+
+export const revalidate = 60; // Revalidate every 60 seconds
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'Browse all my web development projects - Full-stack applications built with React, Next.js, Node.js, and MongoDB',
+};
 
 export default async function ProjectsPage() {
   const result = await getProjects({ status: 'published' });
