@@ -24,7 +24,7 @@ export function AboutSection() {
                   On the back-end, I harness the power of <span className="font-semibold text-gray-900 dark:text-white">Node.js, Express.js, and TypeScript</span> to build robust, scalable applications. My experience with <span className="font-semibold text-gray-900 dark:text-white">Next.js</span> enhances my ability to deliver fast, SEO-optimized solutions, while my proficiency in <span className="font-semibold text-gray-900 dark:text-white">Git and version control</span> ensures smooth collaboration in any team environment.
                 </p>
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                  I thrive on problem-solving, continuously learning, and staying up-to-date with the latest trends in web development to create innovative solutions that meet both user needs and business goals. <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#AD86FF] to-[#789AFF]">Let&apos;s build something exceptional together!</span>
+                  I thrive on problem-solving, continuously learning, and staying up-to-date with the latest trends in web development to create innovative solutions that meet both user needs and business goals. <span className="font-bold text-transparent bg-clip-text bg-linear-to-r from-[#AD86FF] to-[#789AFF]">Let&apos;s build something exceptional together!</span>
                 </p>
               </div>
 

@@ -11,7 +11,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden"
+      className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 lg:px-8 bg-linear-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden"
     >
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -27,7 +27,7 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight">
                 Junior Full-Stack
                 <br />
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
                   JavaScript Developer
                 </span>
               </h1>
@@ -72,7 +72,7 @@ export function HeroSection() {
           {/* Right Side - Image */}
           <SlideIn direction="right" delay={0.2}>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-purple-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
               <div className="relative rounded-full overflow-hidden border-8 border-white dark:border-gray-800 shadow-2xl animate-float">
                 <Image
                   src="/shipon.jpg"
